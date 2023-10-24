@@ -1,12 +1,10 @@
 /* Conforme explicado no enunciado adicione as palavras reservadas let ou const nas variaveis */
 
-let distance = 25000;  
+let distance = 2500;
 let time = 710;
 let gender = "male";
 let pushUps = 40;
 let abs = 35;
-
-/* Determinei "let" para cada variável por entender que esses valores podem sofrer alterações. Por exemplo, se forem determinadas novas metas em um novo TAF.*/
 
 /* 
 
@@ -24,19 +22,17 @@ let abs = 35;
 function testTAF(distance, time, gender, pushUps, abs) {
   passed = false;
 
+
+if (gender ==="male" && distance >= 2400 && time <= 710 && pushUps >= 30 && abs >= 35){
+  return passed;
+  } else if (gender ==='female' && distance >= 2400 && time <= 840 && pushUps >=20 && abs >=30){
+  return passed;}
+
+
   //Sua logica deve ser inserida aqui:
 
-if (gender ==='male' && distance >= 2400 && time >= 720 && pushUps >= 30 && abs >= 35)
-
-if(gender === 'female' && distance >= 2400 && time >= 840 && pushUps >= 20 && abs >= 30)
-
-/*Na construção da lógica, determinei os valores ">=" pra cada etapa do teste, por entender que o candidátio só será aprovado no TAF se atingir os valores determinados na descrição da ativida, ou, se superar esses valores. Diferentemente disso, o candidáto será reprovado*/
-
-
-  
-
   // Retorno da variavel passed onde para o candidato passar ele deve ter o valor de: true
-  return passed;
+  
 }
 
 //para executar o script no terminal digite: node ./script.js
@@ -49,3 +45,5 @@ console.log(
 );
 
 module.exports = testTAF;
+
+
